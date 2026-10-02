@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cmath>
 
 // ВАРИАНТ 10
 
@@ -10,7 +9,7 @@ int main() {
     std::cout << "x = ";
     std::cin >> x;
 
-    if (x <= 0 || x >= pow(10, 9)) {
+    if (x <= 0 || x >= 1000000000LL) {
         std::cout << "Ошибка: 0 < x < 10^9" << std::endl;
         return 1;
     }
