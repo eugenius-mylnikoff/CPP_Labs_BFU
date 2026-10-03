@@ -3,13 +3,13 @@
 // ВАРИАНТ 10
 
 int main() {
-    long long x = 0;
+    int x = 0;
     int i = 0;
 
     std::cout << "x = ";
     std::cin >> x;
 
-    if (x <= 0 || x >= 1000000000LL) {
+    if (x <= 0 || x >= 1000000000) {
         std::cout << "Ошибка: 0 < x < 10^9" << std::endl;
         return 1;
     }
@@ -22,7 +22,7 @@ int main() {
         return 1;
     }
 
-    x = x | (1LL << i);
+    x |= (1 << i);
     std::cout << "Результат: " << x << std::endl;
     return 0;
 }
