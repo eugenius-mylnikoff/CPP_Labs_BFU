@@ -24,6 +24,6 @@ int main() {
     }
 
     double result = std::pow(X, 1.0 / N);
-    std::cout << "Результат: " << result;
+    std::cout << "Результат: " << result << std::endl;
     return 0;
 }
