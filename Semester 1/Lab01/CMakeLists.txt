@@ -1,8 +1,8 @@
-cmake_minimum_required(VERSION 3.15) # Проверка версии CMake.
+cmake_minimum_required(VERSION 3.28) # Проверка версии CMake.
 									 # Если версия установленой программы
 									 # старее указаной, произайдёт аварийный выход.
 
-set(PROJECT_NAME lab01)  			 # задать значение PROJECT_NAME		 
+set(PROJECT_NAME Lab01)  			 # задать значение PROJECT_NAME		 
 project("${PROJECT_NAME}")           # установить имя проекта
 
 
