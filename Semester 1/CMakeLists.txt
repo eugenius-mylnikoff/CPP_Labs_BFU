@@ -6,3 +6,5 @@ project(CPP_Labs_BFU) # Указываем имя проекта
 add_subdirectory(Lab01)
 add_subdirectory(Lab02)
 add_subdirectory(Lab03)
+add_subdirectory(Lab04)
+add_subdirectory(Lab05)
