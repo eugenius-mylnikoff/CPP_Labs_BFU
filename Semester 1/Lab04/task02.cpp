@@ -32,6 +32,7 @@ int main()
             break;
         default:
             std::cout << "Товар не найден" << std::endl;
+            break;
     }
     return 0;
 }
