@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <climits>
 
 int main() {
     int n = 0;
@@ -15,20 +16,17 @@ int main() {
         }
     }
 
-    int columns[100] = {0};
-    for (int i = 0; i < n; ++i) {
-        for (int j = 0; j < m; ++j) {
-            if (abs(matrix[i][j]) % 10 == 3)
-                columns[j] += 1;
-        }
-    }
-
-    int minNumber = columns[0];
+    int minNumber = INT_MAX;
     int columnNumber = 0;
-    for (int i = 0; i < m; ++i) {
-        if (columns[i] < minNumber) {
-            minNumber = columns[i];
-            columnNumber = i;
+    for (int j = 0; j < m; ++j) {
+        int count = 0;
+        for (int i = 0; i < n; ++i) {
+            if (abs(matrix[i][j]) % 10 == 3)
+                count += 1;
+        }
+        if (count < minNumber) {
+            minNumber = count;
+            columnNumber = j;
         }
     }
 
