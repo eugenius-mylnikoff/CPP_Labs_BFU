@@ -10,4 +10,4 @@ set(CMAKE_CXX_STANDARD 20)			 # устанавливаем 20 стандарт �
 set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>DLL")
 
 # Сказать программе, что должен быть исполняемый файл
-add_executable("${PROJECT_NAME}" main.cpp)
+add_executable("${PROJECT_NAME}" main.cpp func.cpp)
